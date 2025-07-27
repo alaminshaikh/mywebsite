@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Lexend;
+            margin: 0;
+            padding: 0;
+        }
+        .header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            /* border: 1px solid black; */
+            padding: 10px 108px;
+            font-size: 22px;
+        }
+        .site-name{
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            color: rgb(255, 115, 0);
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+            img{
+                height: 25px;
+                margin-right: 8px;
+            }
+        }
+        .options{
+            display: flex;
+            font-size: 18px;
+            color: grey;
+            div{
+                margin-right: 50px;
+                cursor: pointer;
+            }
+        }
+        .options div:hover::after{
+            content: "";
+            display: block;
+            width: 30px;
+            height: 3px;
+            border-radius: 10px;
+            background-color: rgb(255, 115, 0);
+            margin-top: 0px;   
+            margin: auto;   
+        }
+        .active{
+            color: black;
+            font-weight: bold;
+        }
+        .active::after {
+            content: "";
+            display: block;
+            width: 30px;
+            height: 3px;
+            border-radius: 10px;
+            background-color: rgb(255, 115, 0);
+            margin-top: 0px;   
+            margin: auto;       
+        }
+
+        .log{
+            display: flex;
+        }
+        .login-btn{
+            font-size: 18px;
+            padding: 8px 20px;
+            border-radius: 10px;
+            border: 2px solid rgb(255, 115, 0);
+            color: rgb(255, 115, 0);
+            background-color: rgba(255, 115, 0, 0.08);
+            margin-right: 20px;
+            cursor: pointer;
+        }
+        .enroll{
+            font-size: 18px;
+            padding: 8px 20px;
+            border-radius: 10px;
+            border: 2px solid rgb(255, 115, 0);
+            color: white;
+            background-color: rgb(255, 115, 0);
+            cursor: pointer;
+        }
+        .btn2{
+
+        }
+        .home-section{
+            margin-top: 50px;
+            display: flex;
+        }
+
+        .left{
+            padding: 10px 100px;
+            width: 60%;
+        }
+        .right{
+            width: 50%;
+            div{
+                width: 60%;
+                img{
+                    width: 100%;
+                    transform: scaleX(-1);
+                }
+            }
+        }
+        .heading{
+            font-family: 'Times New Roman';
+            font-size: 70px;
+            span{
+                color: rgb(255, 115, 0);
+            }
+        }
+        .sub-heading{
+            width: 330px;
+            margin-left: 6px;
+            margin-bottom: 35px;
+            color: #444;
+        }
+        .btn2{
+            display: inline-flex;
+            margin-left: 6px;
+            font-size: 18px;
+            padding: 15px 20px;
+            border-radius: 10px;
+            border: 2px solid rgb(255, 115, 0);
+            color: white;
+            background-color: rgb(255, 115, 0);
+            cursor: pointer;
+            span{
+                font-family: "Consolas";
+            }
+        }
+        .flower{
+            position: relative;
+            img{
+                position: absolute;
+                left: -110px;
+                top: -80px;
+                width: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+
+        <div class="site-name">
+            <img src="open-book.png">
+            <span>BrightNest</span>
+        </div>
+
+        <div class="options">
+            <div class="active">Home</div>
+            <div>About</div>
+            <div>Services</div>
+            <div>Contact</div>
+            <div>Blog</div>
+        </div>
+
+        <div class="log">
+            <div class="login-btn">Login</div>
+            <div class="enroll">Enroll Now</div>
+        </div>
+
+    </div>
+
+    <div class="home-section">
+        <div class="left">
+            <div class="flower"><img src="flower2.png" alt=""></div>
+            <div class="heading">Empowering <span>Young</span> Learners for a <span>Bright</span> Future</div>
+            <p class="sub-heading">Join our interactive learning platform that fosters creativity, critical thinking, and personal growth in every child.</p>
+            <div class="btn2">Begin Learning Today&nbsp;&nbsp;<span>></span></div>
+        </div>
+        <div class="right">
+            <div>
+                <img src="girl2.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
